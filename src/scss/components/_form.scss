@@ -1,0 +1,17 @@
+
+.form {
+
+	&__item {}
+
+	&__input {
+		width: 100%;
+		outline: none;
+		transition: all $varTrs;
+	}
+
+	&__submit {
+		outline: none;
+
+		&:hover {}
+	}
+}

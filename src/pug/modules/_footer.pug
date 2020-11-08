@@ -1,0 +1,12 @@
+mixin icon(name)
+	svg(class="icon " + name )
+		use(xlink:href="svg/symbols.svg#" + name)
+
+mixin footer()
+	footer.footer
+		.container
+			.copyright.footer__copyright &copy; 2020
+			ul.list-social.footer__list-social
+					li.list-social__item
+						a(href="#" class="list-social__link")
+							+icon('icon_name')

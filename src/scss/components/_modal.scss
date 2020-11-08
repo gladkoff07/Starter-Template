@@ -1,0 +1,17 @@
+
+.modal {
+	display: none;
+	text-align: center;
+
+		&__header {}
+
+		&__appeal {}
+
+	&_thank {}
+}
+
+// fancy
+.modal .fancybox-close-small {
+
+	&:hover {}
+}
