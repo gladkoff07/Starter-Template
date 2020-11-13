@@ -1,42 +1,41 @@
-
 @mixin respond($media) {
-	@media only screen and #{$media} {
-			@content;
-	}
+  @media only screen and #{$media} {
+    @content;
+  }
 }
 
 @mixin fontFamily($size, $family) {
-	font-family: $family;
-	font-size: $size;
+  font-family: $family;
+  font-size: $size;
 }
 
 @mixin content($left, $top) {
-	content: '';
-	display: block;
-	position: absolute;
-	left: $left;
-	top: $top;
+  content: "";
+  display: block;
+  position: absolute;
+  left: $left;
+  top: $top;
 }
 
 @mixin alignJustify($justify, $vertical: flex-start) {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: $justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $justify;
 
-	@if($vertical != flex-start) {
-		align-items: $vertical;
-	}
+  @if ($vertical != flex-start) {
+    align-items: $vertical;
+  }
 }
 
 @mixin blockAuto($marginTop) {
-	margin-top: $marginTop;
-	margin-left: auto;
-	margin-right: auto;
+  margin-top: $marginTop;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @mixin textOverflow {
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
-	max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
 }

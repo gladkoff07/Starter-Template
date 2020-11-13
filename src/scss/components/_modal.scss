@@ -1,17 +1,19 @@
-
 .modal {
-	display: none;
-	text-align: center;
+  display: none;
+  text-align: center;
 
-		&__header {}
+  &__header {
+  }
 
-		&__appeal {}
+  &__appeal {
+  }
 
-	&_thank {}
+  &_thank {
+  }
 }
 
 // fancy
 .modal .fancybox-close-small {
-
-	&:hover {}
+  &:hover {
+  }
 }

@@ -7,7 +7,7 @@ $colorAccent: #f1c40f;
 $fontSize: 18px;
 
 // Fonts
-$fontDefault: 'Verdana';
+$fontDefault: "Verdana";
 $fontFallback: Helvetica, sans-serif;
 $font: $fontDefault, $fontFallback;
 
@@ -15,8 +15,8 @@ $font: $fontDefault, $fontFallback;
 $varTrs: 0.3s ease-in-out;
 
 // Breakpoints
-$phoneXs : '(max-width: 375px)';
-$phoneSm : '(max-width: 575px)';
-$tabletPortrait: '(max-width: 767px)';
-$tabletLandscape: '(max-width: 979px)';
-$largeDesktop: '(max-width: 1169px)';
+$phoneXs: "(max-width: 375px)";
+$phoneSm: "(max-width: 575px)";
+$tabletPortrait: "(max-width: 767px)";
+$tabletLandscape: "(max-width: 979px)";
+$largeDesktop: "(max-width: 1169px)";

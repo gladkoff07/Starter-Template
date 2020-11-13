@@ -1,21 +1,21 @@
-
 .list-social {
-	@include alignJustify(flex-start, flex-start);
+  @include alignJustify(flex-start, flex-start);
 
-	&__item {
-		margin-right: 20px;
+  &__item {
+    margin-right: 20px;
 
-		&:last-child {
-			margin-right: 0;
-		}
-	}
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
-	&__link {
-		display: inline-block;
-		width: 30px;
-		height: 30px;
-		border-radius: 50%;
+  &__link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 
-		&:hover {}
-	}
+    &:hover {
+    }
+  }
 }

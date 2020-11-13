@@ -1,10 +1,10 @@
-
-@import './logo';
-@import './phone';
+@import "./logo";
+@import "./phone";
 
 .header {
+  &__logo {
+  }
 
-	&__logo {}
-
-	&__phone {}
+  &__phone {
+  }
 }

@@ -1,50 +1,50 @@
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 
-.container{
-	max-width: 1170px;
-	padding: 0 15px;
-	margin-left: auto;
-	margin-right: auto;
-
-	@include respond($largeDesktop) {
-		width: 100%;
-	}
+  @include respond($largeDesktop) {
+    width: 100%;
+  }
 }
 
 .section,
-section{
-	min-width: 1170px;
-	max-width: 1920px;
-	margin-left: auto;
-	margin-right: auto;
-	background-position: center top;
-	background-repeat: no-repeat;
+section {
+  min-width: 1170px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
 
-	@include respond($largeDesktop) {
-		min-width: 100%;
-	}
+  @include respond($largeDesktop) {
+    min-width: 100%;
+  }
 }
 
 .link-button {
-	display: inline-block;
-	text-decoration: none;
-	outline: none;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
 
-	&:hover {}
+  &:hover {
+  }
 }
 
 .section-header {
-	text-transform: uppercase;
-	text-align: center;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .page-header {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .row {
-	@include alignJustify(flex-start, flex-start);
+  @include alignJustify(flex-start, flex-start);
 
-	&_between {
-		justify-content: space-between;
-	}
+  &_between {
+    justify-content: space-between;
+  }
 }

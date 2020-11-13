@@ -1,10 +1,10 @@
-
-@import './_copyright';
-@import './_list-social';
+@import "./_copyright";
+@import "./_list-social";
 
 .footer {
+  &__copyright {
+  }
 
-	&__copyright {}
-
-	&__list-social {}
+  &__list-social {
+  }
 }
