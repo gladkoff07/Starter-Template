@@ -217,13 +217,16 @@ gulp.task('imgOptim', function() {
   .pipe(gulp.dest('src/img'));
 });
 
+// add settings Host
+const dataHost = require('./apiHost.js');
+
 /* Deploy */
 gulp.task( 'deploy', function () {
- 
+
   var conn = ftp.create( {
-      host:     '',
-      user:     '',
-      password: '',
+      host:     dataHost.host,
+      user:     dataHost.user,
+      password: dataHost.password,
       parallel: 10,
       log:      util.log
   } );
@@ -231,13 +234,13 @@ gulp.task( 'deploy', function () {
   var globs = [
       'build/**'
   ];
- 
+
   // using base = '.' will transfer everything to /public_html correctly
   // turn off buffering in gulp.src for best performance
   return gulp.src( globs, { base: 'build', buffer: false } )
-    .pipe( conn.newer( '/html/site.ru/sites/name/' ) ) // only upload newer files
-    .pipe( conn.dest( '/html/site.ru/sites/name/' ) );
- 
+    .pipe( conn.newer( 'www/html/team-orange.ru/sites/siteName/' ) ) // only upload newer files
+    .pipe( conn.dest( 'www/html/team-orange.ru/sites/siteName/' ) );
+
 });
 
 /* Dev */

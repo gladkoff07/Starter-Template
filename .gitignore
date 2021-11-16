@@ -1,6 +1,6 @@
 /node_modules/
 /build/
-/src/sources/
+.apiHost.js
 /**/_backstage
 /**/package-lock.json
 /**/Thumbs.db
